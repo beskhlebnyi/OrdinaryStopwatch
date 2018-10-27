@@ -16,8 +16,7 @@
         android:layout_marginTop="100dp"
         android:text="00:00:00"
         android:textColor="@color/colorAccent"
-        android:textSize="50sp"
-        tools:text="hello" />
+        android:textSize="50sp" />
 
     <Button
         android:id="@+id/button"
@@ -27,9 +26,8 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Start"
         android:backgroundTint="@android:color/holo_green_light"
+        android:text="Start"
         android:textColor="@android:color/background_light"
-        android:textSize="18sp"
-        />
+        android:textSize="18sp" />
 </RelativeLayout>

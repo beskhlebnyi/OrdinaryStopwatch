@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView stopwatch ;
     Button button;
-    long MillisecondTime, StartTime, TimeBuff, UpdateTime = 0L ;
+    long MillisecondTime, StartTime = 0L ;
     Handler handler;
     int Seconds, Minutes, MilliSeconds ;
     boolean isPressed;
@@ -31,16 +31,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (isPressed == false) {
+
                     isPressed = true;
+                    button.setText("stop");
                     StartTime = SystemClock.uptimeMillis();
                     handler.postDelayed(runnable, 0);
-                    button.setText("stop");
+
                 }
                 else{
+
                     isPressed = false;
                     button.setText("start");
                     handler.removeCallbacks(runnable);
                     stopwatch.setText(stopwatch.getText());
+
                 }
 
             }
